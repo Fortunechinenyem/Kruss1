@@ -1,4 +1,6 @@
+import React from "react";
 import Nav from "react-bootstrap/Nav";
+
 import { Link } from "react-router-dom";
 import logo from "../image/logo.png";
 
@@ -6,7 +8,7 @@ function Navbar() {
   return (
     <header className="d-flex">
       <div className="logo bg-light">
-        <Link to="/" spy={true} smooth={true} offset={-50} duration={500}>
+        <Link to="/">
           <img src={logo} alt={Navbar.png} />
         </Link>
       </div>

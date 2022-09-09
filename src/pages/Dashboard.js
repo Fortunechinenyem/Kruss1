@@ -1,7 +1,17 @@
 import React from "react";
+import styled from "styled-components";
+import Dash from "../components/dashcomponents/Dash";
+import NavDash from "../components/dashcomponents/NavDash";
+import Sidebar from "../components/dashcomponents/Sidebar";
 
-const Dashboard = () => {
-  return <div></div>;
-};
+export default function Dashboard() {
+  return (
+    <Div>
+      <NavDash />
+      <Sidebar />
+      <Dash />
+    </Div>
+  );
+}
 
-export default Dashboard;
+const Div = styled.div``;

@@ -1,17 +1,18 @@
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Navbar from "./components/Navbar";
+
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );
