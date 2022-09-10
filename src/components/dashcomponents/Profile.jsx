@@ -24,6 +24,7 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap:1rem;
   .image {
     max-height: 10rem;
 overflow: hidden;
@@ -43,5 +44,10 @@ border-radius: 3rem;
   }
   .title {
     text-align: center;
+    h2,
+    h5 {
+color: rgb(24, 218, 208);
+
+    }
   }
 `;

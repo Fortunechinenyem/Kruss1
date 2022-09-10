@@ -108,6 +108,13 @@ strong {
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
 }
+.card {
+  background-color: var(--clr-dark) !;
+  color: var(--clr-accent);
+}
+.card-body {
+  background-color: var(--clr-dark);
+}
 /* Typography */
 
 h1,
@@ -238,6 +245,21 @@ header {
 .hamburger::after {
   bottom: 6px;
 }
+/* Home */
+.section__title--services {
+  color: var(--clr-dark);
+  position: relative;
+}
+
+.section__title--services::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-accent);
+}
+
 /* Dashboard */
 
 .side {

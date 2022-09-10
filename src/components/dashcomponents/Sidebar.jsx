@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { MdSpaceDashboard } from "react-icons/md";
-import { RiDashboard2Fill } from "react-icons/ri";
+
 import { FaAddressCard, FaCar, FaHome } from "react-icons/fa";
 import { GiTwirlCenter } from "react-icons/gi";
 import { BsFillChatTextFill } from "react-icons/bs";
@@ -11,8 +11,38 @@ import { FiLogOut } from "react-icons/fi";
 import { FcAbout } from "react-icons/fc";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
+import scrollreveal from "scrollreveal";
 export default function Sidebar() {
   const [currentLink, setCurrentLink] = useState(1);
+  const [navbarState, setNavbarState] = useState(false);
+  const html = document.querySelector("html");
+  html.addEventListener("click", () => setNavbarState(false));
+
+  useEffect(() => {
+    const sr = scrollreveal({
+      origin: "left",
+      distance: "80px",
+      duration: 1000,
+      reset: false,
+    });
+
+    sr.reveal(
+      `
+          .brand,
+          .links>ul>li:nth-of-type(1),
+      .links>ul>li:nth-of-type(2),
+      .links>ul>li:nth-of-type(3),
+      .links>ul>li:nth-of-type(4),
+      .links>ul>li:nth-of-type(5),
+      .links>ul>li:nth-of-type(6),
+      .logout
+      `,
+      {
+        opacity: 0,
+        interval: 300,
+      }
+    );
+  }, []);
   return (
     <>
       <Section className="side">
@@ -21,12 +51,23 @@ export default function Sidebar() {
             <FaCar />
             <span> Kruss</span>
           </div>
-          <div className="toggle"></div>
+          <div className="toggle">
+            {navbarState ? (
+              <VscChromeClose onClick={() => setNavbarState(false)} />
+            ) : (
+              <GiHamburgerMenu
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setNavbarState(true);
+                }}
+              />
+            )}
+          </div>
           <div className="links">
             <ul>
               <li
                 onClick={() => setCurrentLink(1)}
-                className={currentLink === 1 ? "active" : ""}
+                className={currentLink === 1 ? "active" : "none"}
               >
                 <Link to="/dashboard" className="sides">
                   <MdSpaceDashboard />
@@ -35,7 +76,7 @@ export default function Sidebar() {
               </li>
               <li
                 onClick={() => setCurrentLink(2)}
-                className={currentLink === 2 ? "active" : ""}
+                className={currentLink === 2 ? "active" : "none"}
               >
                 <Link to="/" className="sides">
                   <FaHome />
@@ -44,7 +85,7 @@ export default function Sidebar() {
               </li>
               <li
                 onClick={() => setCurrentLink(3)}
-                className={currentLink === 3 ? "active" : ""}
+                className={currentLink === 3 ? "active" : "none"}
               >
                 <Link to="/about" className="sides">
                   <FcAbout />
@@ -53,7 +94,7 @@ export default function Sidebar() {
               </li>
               <li
                 onClick={() => setCurrentLink(4)}
-                className={currentLink === 4 ? "active" : ""}
+                className={currentLink === 4 ? "active" : "none"}
               >
                 <Link to="#" className="sides">
                   <FaAddressCard />
@@ -62,7 +103,7 @@ export default function Sidebar() {
               </li>
               <li
                 onClick={() => setCurrentLink(5)}
-                className={currentLink === 5 ? "active" : ""}
+                className={currentLink === 5 ? "active" : "none"}
               >
                 <Link to="#" className="sides">
                   <GiTwirlCenter />
@@ -71,16 +112,16 @@ export default function Sidebar() {
               </li>
               <li
                 onClick={() => setCurrentLink(6)}
-                className={currentLink === 6 ? "active" : ""}
+                className={currentLink === 6 ? "active" : "none"}
               >
-                <Link to="#" className="sides">
+                <Link to="/about" className="sides">
                   <BsFillChatTextFill />
                   <span> FAQ</span>
                 </Link>
               </li>
               <li
                 onClick={() => setCurrentLink(7)}
-                className={currentLink === 7 ? "active" : ""}
+                className={currentLink === 7 ? "active" : "none"}
               >
                 <Link to="#" className="sides">
                   <IoSettings />
@@ -97,81 +138,237 @@ export default function Sidebar() {
           </div>
         </div>
       </Section>
+      <ResponsiveNav
+        state={navbarState}
+        className={navbarState ? "show" : "none"}
+      >
+        <div className="responsive__links">
+          <ul>
+            <li
+              onClick={() => setCurrentLink(1)}
+              className={currentLink === 1 ? "active" : "none"}
+            >
+              <Link to="/dashboard" className="sides">
+                <MdSpaceDashboard />
+                <span> Dashboard</span>
+              </Link>
+            </li>
+            <li
+              onClick={() => setCurrentLink(2)}
+              className={currentLink === 2 ? "active" : "none"}
+            >
+              <Link to="/" className="sides">
+                <FaHome />
+                <span> Home</span>
+              </Link>
+            </li>
+            <li
+              onClick={() => setCurrentLink(3)}
+              className={currentLink === 3 ? "active" : "none"}
+            >
+              <Link to="/about" className="sides">
+                <FcAbout />
+                <span> About</span>
+              </Link>
+            </li>
+            <li
+              onClick={() => setCurrentLink(4)}
+              className={currentLink === 4 ? "active" : "none"}
+            >
+              <Link to="#" className="sides">
+                <FaAddressCard />
+                <span> Payment Details</span>
+              </Link>
+            </li>
+            <li
+              onClick={() => setCurrentLink(5)}
+              className={currentLink === 5 ? "active" : "none"}
+            >
+              <Link to="#" className="sides">
+                <GiTwirlCenter />
+                <span> Courses</span>
+              </Link>
+            </li>
+            <li
+              onClick={() => setCurrentLink(6)}
+              className={currentLink === 6 ? "active" : "none"}
+            >
+              <Link to="/about" className="sides">
+                <BsFillChatTextFill />
+                <span> FAQ</span>
+              </Link>
+            </li>
+            <li
+              onClick={() => setCurrentLink(7)}
+              className={currentLink === 7 ? "active" : "none"}
+            >
+              <Link to="#" className="sides">
+                <IoSettings />
+                <span> Settings</span>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </ResponsiveNav>
     </>
   );
 }
 
 const Section = styled.section`
-  
-    position: fixed;
-    left: 0;
-    background: black;
-    color: var(--clr-sisi);
-    list-style: none;
-    height: 100vh;
-    width: 25vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 0;
-    gap: 2rem;
-  }
+  position: fixed;
+  left: 0;
+  background-color: #212121;
+  height: 100vh;
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  gap: 2rem;
   .top {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-  }
-  .toggle {
-    display: none;
-  }
-
-  .brand {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-  svg {
-    color: var(--clr-accent);
-    font-size: 1.5rem;
-  }
-  span {
-    font-size: 1rem;
-    color: var(--clr-accent);
-  }
-  .links {
-    display: flex;
-    justify-content: center;
-    color: var(--clr-dark);
-  }
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  li {
-    padding: 0.6rem 1rem;
-    border-radius: 0.6rem;
-  }
-  :hover {
-    background-color: mint;
-  }
-  
-  .active {
-    background-color: white
-    ;
+    .toggle {
+      display: none;
+    }
+    .brand {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      svg {
+        color: rgb(24, 218, 208);
+        font-size: 2rem;
+      }
+      span {
+        font-size: 2rem;
+        color: rgb(24, 218, 208);
+        font-family: "Permanent Marker", cursive;
+      }
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        li {
+          padding: 0.6rem 1rem;
+          border-radius: 0.6rem;
+          &:hover {
+            background-color: #ffc107;
+            a {
+              color: black;
+            }
+          }
+          a {
+            text-decoration: none;
+            display: flex;
+            gap: 1rem;
+            color: white;
+          }
+        }
+        .active {
+          background-color: #ffc107;
+          a {
+            color: black;
+          }
+        }
+      }
+    }
   }
   .logout {
-  padding: 0.3rem 1rem;
-  border-radius: 0.6rem;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
+    padding: 0.3rem 1rem;
+    border-radius: 0.6rem;
+    &:hover {
+      background-color: #da0037;
+    }
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: white;
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    position: initial;
+    width: 100%;
+    height: max-content;
+    padding: 1rem;
+    .top {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      .toggle {
+        display: block;
+        color: white;
+        z-index: 99;
+        svg {
+          font-size: 1.4rem;
+        }
+      }
+      .brand {
+        gap: 1rem;
+        justify-content: flex-start;
+      }
+    }
+    .top > .links,
+    .logout {
+      display: none;
+    }
+  }
+`;
 
+const ResponsiveNav = styled.div`
+  position: fixed;
+  right: -10vw;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+  height: 100vh;
+  width: ${({ state }) => (state ? "60%" : "0%")};
+  transition: 0.4s ease-in-out;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  padding: 1rem;
+  .responsive__links {
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 3rem;
+      li {
+        padding: 0.6rem 1rem;
+        border-radius: 0.6rem;
+        &:hover {
+          background-color: #ffc107;
+          a {
+            color: black;
+          }
+        }
+        a {
+          text-decoration: none;
+          display: flex;
+          gap: 1rem;
+          color: white;
+        }
+      }
+      .active {
+        background-color: #ffc107;
+        a {
+          color: black;
+        }
+      }
+    }
+  }
 `;
