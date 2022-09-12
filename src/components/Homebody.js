@@ -11,12 +11,12 @@ const Homebody = () => {
       </div>
       <Card className="text-center">
         <Card.Body>
-          <Card.Title>Special title treatment</Card.Title>
+          <Card.Title>Exciting News!</Card.Title>
           <Card.Text>
-            With supporting text below as a natural lead-in to additional
-            content.
+            Check out our e-book{" "}
+            <bold>"How to buy and sell Nigerian Used Cars"</bold>
           </Card.Text>
-          <Button variant="info">Go somewhere</Button>
+          <Button variant="info">Purchase</Button>
         </Card.Body>
       </Card>
     </section>

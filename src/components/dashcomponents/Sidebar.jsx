@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { MdSpaceDashboard } from "react-icons/md";
-
-import { FaAddressCard, FaCar, FaHome } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { FaAddressCard, FaCar } from "react-icons/fa";
 import { GiTwirlCenter } from "react-icons/gi";
 import { BsFillChatTextFill } from "react-icons/bs";
 import { IoSettings } from "react-icons/io5";
 import { FiLogOut } from "react-icons/fi";
-import { FcAbout } from "react-icons/fc";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
 import scrollreveal from "scrollreveal";
@@ -43,13 +41,14 @@ export default function Sidebar() {
       }
     );
   }, []);
+
   return (
     <>
-      <Section className="side">
+      <Section>
         <div className="top">
           <div className="brand">
             <FaCar />
-            <span> Kruss</span>
+            <span>KRUSS</span>
           </div>
           <div className="toggle">
             {navbarState ? (
@@ -66,146 +65,125 @@ export default function Sidebar() {
           <div className="links">
             <ul>
               <li
-                onClick={() => setCurrentLink(1)}
                 className={currentLink === 1 ? "active" : "none"}
+                onClick={() => setCurrentLink(1)}
               >
-                <Link to="/dashboard" className="sides">
+                <a href="#">
                   <MdSpaceDashboard />
                   <span> Dashboard</span>
-                </Link>
+                </a>
               </li>
               <li
-                onClick={() => setCurrentLink(2)}
                 className={currentLink === 2 ? "active" : "none"}
+                onClick={() => setCurrentLink(2)}
               >
-                <Link to="/" className="sides">
+                <a href="#">
                   <FaHome />
                   <span> Home</span>
-                </Link>
+                </a>
               </li>
               <li
-                onClick={() => setCurrentLink(3)}
                 className={currentLink === 3 ? "active" : "none"}
+                onClick={() => setCurrentLink(3)}
               >
-                <Link to="/about" className="sides">
-                  <FcAbout />
-                  <span> About</span>
-                </Link>
-              </li>
-              <li
-                onClick={() => setCurrentLink(4)}
-                className={currentLink === 4 ? "active" : "none"}
-              >
-                <Link to="#" className="sides">
+                <a href="#">
                   <FaAddressCard />
                   <span> Payment Details</span>
-                </Link>
+                </a>
               </li>
               <li
-                onClick={() => setCurrentLink(5)}
-                className={currentLink === 5 ? "active" : "none"}
+                className={currentLink === 4 ? "active" : "none"}
+                onClick={() => setCurrentLink(4)}
               >
-                <Link to="#" className="sides">
+                <a href="#">
                   <GiTwirlCenter />
-                  <span> Courses</span>
-                </Link>
+                  <span> Learning Center</span>
+                </a>
               </li>
               <li
-                onClick={() => setCurrentLink(6)}
-                className={currentLink === 6 ? "active" : "none"}
+                className={currentLink === 5 ? "active" : "none"}
+                onClick={() => setCurrentLink(5)}
               >
-                <Link to="/about" className="sides">
+                <a href="#">
                   <BsFillChatTextFill />
-                  <span> FAQ</span>
-                </Link>
+                  <span> FAQs</span>
+                </a>
               </li>
               <li
-                onClick={() => setCurrentLink(7)}
-                className={currentLink === 7 ? "active" : "none"}
+                className={currentLink === 6 ? "active" : "none"}
+                onClick={() => setCurrentLink(6)}
               >
-                <Link to="#" className="sides">
+                <a href="#">
                   <IoSettings />
                   <span> Settings</span>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
-          <div className="logout">
-            <Link to="#">
-              <FiLogOut />
-              <span> Logout</span>
-            </Link>
-          </div>
+        </div>
+        <div className="logout">
+          <a href="#">
+            <FiLogOut />
+            <span className="logout">Logout</span>
+          </a>
         </div>
       </Section>
-      <ResponsiveNav
-        state={navbarState}
-        className={navbarState ? "show" : "none"}
-      >
+      <ResponsiveNav state={navbarState} className={navbarState ? "show" : ""}>
         <div className="responsive__links">
           <ul>
             <li
-              onClick={() => setCurrentLink(1)}
               className={currentLink === 1 ? "active" : "none"}
+              onClick={() => setCurrentLink(1)}
             >
-              <Link to="/dashboard" className="sides">
+              <a href="#">
                 <MdSpaceDashboard />
                 <span> Dashboard</span>
-              </Link>
+              </a>
             </li>
             <li
-              onClick={() => setCurrentLink(2)}
               className={currentLink === 2 ? "active" : "none"}
+              onClick={() => setCurrentLink(2)}
             >
-              <Link to="/" className="sides">
+              <a href="#">
                 <FaHome />
                 <span> Home</span>
-              </Link>
+              </a>
             </li>
             <li
-              onClick={() => setCurrentLink(3)}
               className={currentLink === 3 ? "active" : "none"}
+              onClick={() => setCurrentLink(3)}
             >
-              <Link to="/about" className="sides">
-                <FcAbout />
-                <span> About</span>
-              </Link>
-            </li>
-            <li
-              onClick={() => setCurrentLink(4)}
-              className={currentLink === 4 ? "active" : "none"}
-            >
-              <Link to="#" className="sides">
+              <a href="#">
                 <FaAddressCard />
                 <span> Payment Details</span>
-              </Link>
+              </a>
             </li>
             <li
-              onClick={() => setCurrentLink(5)}
-              className={currentLink === 5 ? "active" : "none"}
+              className={currentLink === 4 ? "active" : "none"}
+              onClick={() => setCurrentLink(4)}
             >
-              <Link to="#" className="sides">
+              <a href="#">
                 <GiTwirlCenter />
-                <span> Courses</span>
-              </Link>
+                <span> Learning Center</span>
+              </a>
             </li>
             <li
-              onClick={() => setCurrentLink(6)}
-              className={currentLink === 6 ? "active" : "none"}
+              className={currentLink === 5 ? "active" : "none"}
+              onClick={() => setCurrentLink(5)}
             >
-              <Link to="/about" className="sides">
+              <a href="#">
                 <BsFillChatTextFill />
-                <span> FAQ</span>
-              </Link>
+                <span> FAQs</span>
+              </a>
             </li>
             <li
-              onClick={() => setCurrentLink(7)}
-              className={currentLink === 7 ? "active" : "none"}
+              className={currentLink === 6 ? "active" : "none"}
+              onClick={() => setCurrentLink(6)}
             >
-              <Link to="#" className="sides">
+              <a href="#">
                 <IoSettings />
                 <span> Settings</span>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -213,7 +191,6 @@ export default function Sidebar() {
     </>
   );
 }
-
 const Section = styled.section`
   position: fixed;
   left: 0;
