@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import avatarImage from "./assets/lady.png";
 import { cardStyle } from "./ReusableStyles";
+import { Link } from "react-router-dom";
 
 export default function Testimonials() {
   const transactions = [
