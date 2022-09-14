@@ -1,8 +1,7 @@
 import React from "react";
 import Heroimage from "../image/car.png";
 import Founder from "../image/5236.jpg";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+
 import Services from "./Services";
 
 const AboutBody = () => {

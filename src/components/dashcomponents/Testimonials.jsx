@@ -50,9 +50,9 @@ export default function Testimonials() {
           );
         })}
       </div>
-      <a className="view" href="#">
+      <Link className="view" to="/about">
         View all <HiArrowNarrowRight />
-      </a>
+      </Link>
     </Section>
   );
 }
