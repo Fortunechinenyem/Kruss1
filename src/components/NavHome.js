@@ -49,14 +49,6 @@ function NavHome() {
             </Link>
           </li>
         </ul>
-        <div className="mb-4 ">
-          <Button variant="info" className="m-2">
-            Sign Up
-          </Button>
-          <Button variant="info" className="m-2">
-            Sign In
-          </Button>
-        </div>
       </Nav>
     </header>
   );

@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { AiFillCalendar } from "react-icons/ai";
 import { MdTimelapse } from "react-icons/md";
 import { IoMdCash } from "react-icons/io";
-import { cardStyle, cardStyles } from "./ReusableStyles";
+import { cardStyle } from "./ReusableStyles";
 export default function FAQ() {
   const faqs = [
     {
@@ -13,7 +13,7 @@ export default function FAQ() {
     },
     {
       icon: <MdTimelapse />,
-      text: "How to know if an Odometer",
+      text: "How to know if an Odometer has been doctored",
     },
     {
       icon: <IoMdCash />,
@@ -22,7 +22,7 @@ export default function FAQ() {
   ];
 
   return (
-    <Section>
+    <Section className="w-75 mx-auto">
       <div className="title">
         <h3>Frequently Asked Questions</h3>
       </div>

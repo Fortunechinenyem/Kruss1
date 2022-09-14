@@ -21,39 +21,47 @@ const Footer = () => {
           </header>
 
           <Card.Text>
-            <div className="footer">
-              <ul className="social-list">
-                <li className="social-list__item">
-                  <Link
-                    to="/about"
-                    className="social-list__link"
-                    href="http://linkedin.com"
-                  >
-                    FAQ
-                  </Link>
-                </li>
-                <li className="social-list__item">
-                  <a className="social-list__link" href="http://linkedin.com">
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                </li>
-                <li className="social-list__item">
-                  <a className="social-list__link" href="https://twitter.com">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li className="social-list__item">
-                  <a className="social-list__link" href="https://whatsapp.com">
-                    <i className="fab fa-whatsapp"></i>
-                  </a>
-                </li>
-                <li className="social-list__item">
-                  <a className="social-list__link" href="https://facebook.com">
-                    <i className="fab fa-facebook"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <footer>
+              <div className="footer">
+                <ul className="social-list">
+                  <li className="social-list__item">
+                    <Link
+                      to="/about"
+                      className="social-list__link"
+                      href="http://linkedin.com"
+                    >
+                      FAQ
+                    </Link>
+                  </li>
+                  <li className="social-list__item">
+                    <a className="social-list__link" href="http://linkedin.com">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li className="social-list__item">
+                    <a className="social-list__link" href="https://twitter.com">
+                      <i className="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li className="social-list__item">
+                    <a
+                      className="social-list__link"
+                      href="https://whatsapp.com"
+                    >
+                      <i className="fab fa-whatsapp"></i>
+                    </a>
+                  </li>
+                  <li className="social-list__item">
+                    <a
+                      className="social-list__link"
+                      href="https://facebook.com"
+                    >
+                      <i className="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </footer>
           </Card.Text>
         </Card.Body>
       </Card>

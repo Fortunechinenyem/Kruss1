@@ -246,6 +246,9 @@ header {
   bottom: 6px;
 }
 /* Home */
+.hero {
+  transition: 0.3s ease-in-out;
+}
 .section__title--services {
   color: var(--clr-dark);
   position: relative;
@@ -338,7 +341,10 @@ li:hover {
 .dashspan {
   background-color: var(--clr-accent);
 }
-
+/* Contact Us */
+.contacthero {
+  max-width: 280px;
+}
 /* footer */
 .footer {
   background: var(--clr-dark);
@@ -369,6 +375,7 @@ li:hover {
 .social-list {
   list-style: none;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin: 2em 0 0;
   padding: 0;

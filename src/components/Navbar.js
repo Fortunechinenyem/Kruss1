@@ -13,15 +13,15 @@ function Navbar() {
         </Link>
       </div>
       <Nav defaultActiveKey="/home">
-        <ul>
-          <li className="nav__list">
+        <ul className="nav__list">
+          <li className="">
             <Link to="/">Home</Link>
           </li>
-          <li className="nav__list">
+          <li className="">
             <Link to="/about">About</Link>
           </li>
-          <li className="nav__list">
-            <Link to="/dashboard">Dashboard</Link>
+          <li className="">
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </Nav>
