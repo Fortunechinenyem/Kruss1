@@ -247,7 +247,7 @@ header {
 }
 /* Home */
 .hero {
-  transition: 0.3s ease-in-out;
+  max-width: 300px;
 }
 .section__title--services {
   color: var(--clr-dark);

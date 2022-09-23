@@ -42,7 +42,7 @@ const Footer = () => {
                   <li className="social-list__item">
                     <a
                       className="social-list__link"
-                      href="https://whatsapp.com"
+                      href="https://wa.link/0gjrij"
                     >
                       <i className="fab fa-whatsapp"></i>
                     </a>
