@@ -36,7 +36,7 @@ function NavHome() {
             onClick={() => setCurrentLink(1)}
             className={currentLink === 1 ? "active" : "none"}
           >
-            <Link to="/" className="">
+            <Link to="/" className="nav__link">
               <span> Home</span>
             </Link>
           </li>
@@ -44,7 +44,7 @@ function NavHome() {
             onClick={() => setCurrentLink(2)}
             className={currentLink === 2 ? "active" : "none"}
           >
-            <Link to="/about" className="sides">
+            <Link to="/about" className="nav__link">
               <span> About</span>
             </Link>
           </li>

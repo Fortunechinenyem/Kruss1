@@ -18,7 +18,7 @@ const Services = () => {
   return (
     <>
       <section className="py-4 container">
-        <h2 className="w-50 mx-auto section__title section__title--services">
+        <h2 className="w-50 text-center mx-auto section__title section__title--services">
           What We do
         </h2>
         <div className="row justify-content-center">

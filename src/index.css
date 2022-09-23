@@ -174,8 +174,8 @@ header {
 }
 
 .nav__link {
-  color: var(--clr-dark);
-
+  color: var(--clr-sisi);
+  background-color: var(--clr-dark);
   font-size: var(--fs-body);
   text-decoration: none;
 }
