@@ -25,11 +25,7 @@ const Footer = () => {
               <div className="footer">
                 <ul className="social-list">
                   <li className="social-list__item">
-                    <Link
-                      to="/about"
-                      className="social-list__link"
-                      href="http://linkedin.com"
-                    >
+                    <Link to="/about" className="social-list__link">
                       FAQ
                     </Link>
                   </li>

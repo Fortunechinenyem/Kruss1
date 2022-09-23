@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section>
       <div className=" hero d-flex w-75 mx-auto">
-        <h2>Kruss Automotive Services</h2>
+        <h2 className="m-2">Kruss Automotive Services</h2>
         <img src={Heroimage} alt={Hero.png} />
       </div>
     </section>

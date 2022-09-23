@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Homebody = () => {
   return (
     <section>
-      <div className=" w-25 mx-auto mb-4 ">
+      <div className=" w-50 mx-auto mb-4 text-center">
         <Button variant="info" className="m-2">
           <Link to="/signup"> Sign Up</Link>
         </Button>
