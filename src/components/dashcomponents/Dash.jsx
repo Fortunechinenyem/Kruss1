@@ -35,7 +35,7 @@ const Section = styled.section`
     gap: 1rem;
     .row__one {
       display: grid;
-      grid-template-column: reapeat(2, 1fr);
+      grid-template-column: reapeat(3, 1fr);
       height: 50%;
       gap: 1rem;
     }

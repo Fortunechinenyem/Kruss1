@@ -26,12 +26,12 @@ const Section = styled.section`
   align-items: center;
   gap:1rem;
   .image {
-    max-height: 10rem;
+    max-height: 5rem;
 overflow: hidden;
 border-radius: 3rem;
     img {
-      height: 4rem;
-      width: 4rem;
+      height: 2rem;
+      width: 2rem;
       object-fit: cover;
       border-radius: 2rem,
       transition: 0.5s ease-in-out;
