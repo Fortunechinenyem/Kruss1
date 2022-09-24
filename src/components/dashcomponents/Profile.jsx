@@ -10,7 +10,7 @@ export default function Profile() {
         <img src={image} alt="" />
       </div>
       <div className="title">
-        <h2>Agarawu</h2>
+        <h2>Shelly</h2>
         <h5>
           <HiOutlineLocationMarker /> Ikotun,Lagos
         </h5>
