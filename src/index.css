@@ -108,36 +108,7 @@ strong {
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
 }
-.section__title {
-  margin-bottom: 0.25em;
-}
 
-.section__title--intro {
-  font-weight: var(--fw-reg);
-}
-
-.section__title--intro strong {
-  display: block;
-}
-
-.section__subtitle {
-  margin: 0;
-  font-size: var(--fs-h3);
-}
-
-.section__subtitle--intro,
-.section__subtitle--about {
-  background: var(--clr-accent);
-  padding: 0.25em 1em;
-  font-family: var(--ff-secondary);
-  margin-bottom: 1em;
-}
-
-.section__subtitle--work {
-  color: var(--clr-accent);
-  font-weight: var(--fw-bold);
-  margin-bottom: 2em;
-}
 .card {
   background-color: var(--clr-dark) !;
   color: var(--clr-accent);
@@ -277,8 +248,50 @@ header {
 }
 /* Home */
 .hero {
-  max-width: 300px;
+  width: 100vw;
+  height: 100vh;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  color: white; /* ADD THIS LINE */
+
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./image/hero.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+.heroimage {
+  max-width: 500px;
+}
+
+.herotext {
+}
+.herobutton {
+  display: block;
+  width: 200px;
+
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: rgb(36, 19, 19);
+  text-decoration: none;
+  font-size: 1.5em;
+
+  border: 3px solid white;
+  border-radius: 20px;
+  background-color: rgb(24, 218, 208);
+}
+
 .section__title--services {
   color: var(--clr-dark);
   position: relative;
