@@ -32,7 +32,7 @@ const AboutBody = () => {
           Kruss Automotive Services started from a need to provide professional
           services to clients who might not have the time to go to auto
           workshops themselves considering the times and society where everyone
-          has things to do, we unstood the pain of looking for trustworthy
+          has things to do, we understood the pain of looking for trustworthy
           auto-technicians and the service they render.
         </p>
       </div>
