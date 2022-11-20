@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 const Hero = () => {
   return (
@@ -6,7 +8,9 @@ const Hero = () => {
       <div className="">
         <div className="herotext">
           <h1>Kruss Automotive Services </h1>
-          <button className="herobutton">Explore</button>
+          <Button variant="info" className="nav-item">
+            <Link to="/signin"> Explore</Link>
+          </Button>
         </div>
       </div>
     </section>

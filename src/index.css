@@ -393,12 +393,16 @@ li:hover {
   background: var(--clr-dark);
   color: var(--clr-accent);
   text-align: center;
-  padding: 1.5em 0;
+  align-content: center;
+  padding: 2.5em 0;
   font-size: var(--fs-h3);
+}
+.footerlogo {
+  margin: 10 10 10 10;
 }
 
 .footer a {
-  color: inherit;
+  color: var(--clr-accent);
   text-decoration: none;
 }
 
@@ -408,7 +412,7 @@ li:hover {
 
 .footer__link:hover,
 .social-list__link:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .footer__link:hover {
@@ -420,14 +424,14 @@ li:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 1em 0 0;
+  margin: 2em 0 0;
   padding: 0;
 }
 
 .social-list__item {
-  margin: 0 0.2em;
+  margin: 0 0.5em;
 }
 
 .social-list__link {
-  padding: 0.2em;
+  padding: 0.5em;
 }
