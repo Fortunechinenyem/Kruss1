@@ -58,10 +58,10 @@ const Footer = () => {
                 </ul>
               </div>
             </footer>
-            ​Copyright © 2022, KrussAuto. All Rights Reserved.
             <div className="logo m-3">
               <img src={logo} alt={Footer.png} />
             </div>
+            ​Copyright © 2022, KrussAuto. All Rights Reserved.
           </div>
         </div>
       </div>
