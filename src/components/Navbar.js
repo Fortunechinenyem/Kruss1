@@ -4,7 +4,7 @@ import { NavLink as Link, useNavigate } from "react-router-dom";
 
 import logo from "../image/logo.png";
 const Nav = styled("nav")`
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   background-color: #95b1b0;
 `;
 const LinksWrapper = styled("ul")`
@@ -74,7 +74,12 @@ const NavLinks = () => {
       </li>
       <li className="nav-item">
         <Link className="nav-link" to="/about" style={{ color: "#268f7d" }}>
-          About Us
+          About Kruss
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/services" style={{ color: "#268f7d" }}>
+          Auto-Services
         </Link>
       </li>
 

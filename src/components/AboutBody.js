@@ -2,7 +2,7 @@ import React from "react";
 import Heroimage from "../image/car.png";
 import Founder from "../image/5236.jpg";
 
-import Services from "./Services";
+import Services from "./HomeFeat1";
 
 const AboutBody = () => {
   return (

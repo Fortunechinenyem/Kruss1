@@ -8,12 +8,9 @@ const Footer = () => {
       <div className="text-center">
         <div className="">
           <div className="footer">
-            <div className="logo m-3">
-              <img src={logo} alt={Footer.png} />
-            </div>
             <footer className="footer">
               <div>
-                <h5>Connect</h5>
+                <h5>Contact</h5>
                 <a href="mailto:buzzimails@gmail.com" className="footer__link">
                   info@krussauto.com
                 </a>
@@ -62,6 +59,9 @@ const Footer = () => {
               </div>
             </footer>
             ​Copyright © 2022, KrussAuto. All Rights Reserved.
+            <div className="logo m-3">
+              <img src={logo} alt={Footer.png} />
+            </div>
           </div>
         </div>
       </div>

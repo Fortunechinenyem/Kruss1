@@ -2,16 +2,21 @@ import React from "react";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Homebody from "../components/Homebody";
-import Navbar from "../components/Navbar";
-
-import Services from "../components/Services";
+import HomeFeat1 from "../components/HomeFeat1";
+import HomeFeat2 from "../components/HomeFeat2";
+import HomeFeat3 from "../components/HomeFeat3";
+import HomeFeat4 from "../components/HomeFeat4";
+import HomeFeat5 from "../components/HomeFeat5";
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <Hero />
-      <Services />
+      <HomeFeat1 />
+      <HomeFeat2 />
+      <HomeFeat3 />
+      <HomeFeat4 />
+      <HomeFeat5 />
       <Homebody />
       <Footer />
     </div>
