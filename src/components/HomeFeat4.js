@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../image/image1.jpg";
+import logo from "../image/img (4).jpg";
 
 const HomeFeat4 = () => {
   return (
