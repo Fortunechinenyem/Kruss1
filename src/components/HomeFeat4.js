@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPeopleCarry, FaRegEnvelope } from "react-icons/fa";
+import { FaPeopleCarry } from "react-icons/fa";
 import logo from "../image/img (4).jpg";
 
 const HomeFeat4 = () => {
