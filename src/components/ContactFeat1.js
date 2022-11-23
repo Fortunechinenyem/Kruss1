@@ -5,19 +5,19 @@ import { FaEnvelope, FaPhone } from "react-icons/fa";
 const ContactFeat1 = () => {
   return (
     <section>
-      <div className="d-flex container contactfeat1 ">
-        <div>
+      <div className="d-flex container row contactfeat1 mx-auto ">
+        <div className="col-md">
           <FaEnvelope />
           <p>Email Us </p>
           info@krussauto
         </div>
 
-        <div>
+        <div className="col-md">
           <FaPhone />
           <p>Call Us </p>
           07030984805
         </div>
-        <div>
+        <div className="col-md">
           <BsChatLeftDotsFill />
           <p>Chat with Us </p>
           09025301696
