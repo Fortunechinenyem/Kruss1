@@ -3,6 +3,7 @@ import logo1 from "../image/pic (2).jpg";
 import logo2 from "../image/pic (6).jpg";
 import logo3 from "../image/pic (7).jpg";
 import logo4 from "../image/img (3).jpg";
+import { BsArrowRight } from "react-icons/bs";
 
 const BlogFeat2 = () => {
   return (
@@ -27,6 +28,9 @@ const BlogFeat2 = () => {
             We bridge the gap between auto artisans and the clients providing
             professional guidiance and services.
           </p>
+          <button className="btn btn-dark">
+            See more <BsArrowRight />
+          </button>
         </div>
       </div>
       <div className="text-center w-100 mx-auto container">
@@ -49,6 +53,9 @@ const BlogFeat2 = () => {
             We bridge the gap between auto artisans and the clients providing
             professional guidiance and services.
           </p>
+          <button className="btn btn-dark">
+            See more <BsArrowRight />
+          </button>
         </div>
       </div>
       <div className="text-center w-100 mx-auto container">
@@ -71,6 +78,9 @@ const BlogFeat2 = () => {
             We bridge the gap between auto artisans and the clients providing
             professional guidiance and services.
           </p>
+          <button className="btn btn-dark">
+            See more <BsArrowRight />
+          </button>
         </div>
       </div>
       <div className="text-center w-100 mx-auto container">
@@ -93,6 +103,9 @@ const BlogFeat2 = () => {
             We bridge the gap between auto artisans and the clients providing
             professional guidiance and services.
           </p>
+          <button className="btn btn-dark">
+            See more <BsArrowRight />
+          </button>
         </div>
       </div>
     </section>
