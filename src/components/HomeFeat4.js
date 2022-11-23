@@ -1,6 +1,8 @@
 import React from "react";
 import { FaPeopleCarry } from "react-icons/fa";
 import logo from "../image/img (4).jpg";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 const HomeFeat4 = () => {
   return (
@@ -18,10 +20,14 @@ const HomeFeat4 = () => {
           <div>
             <div>
               <FaPeopleCarry />
-              We work together to achieve awesome goals!
+              <p>We work together to achieve awesome goals!</p>
             </div>
           </div>
-          <button className="btn btn-dark">About Us</button>
+          <Link to="/sevices">
+            <Button variant="dark" className="nav-item">
+              About Us
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
