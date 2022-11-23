@@ -9,7 +9,7 @@ const Nav = styled("nav")`
 `;
 const LinksWrapper = styled("ul")`
   background-color: #fff;
-  padding: 0 5rem;
+  padding: 0 2rem;
 `;
 const SearchNavWrapper = styled("div")``;
 const ButtonWrapper = styled("div")` display: flex;justify-content: flex-end;
@@ -27,7 +27,7 @@ const Button = styled("button")`
   border: none;
 `;
 const LogoWrapper = styled("div")`
-  margin-right: 5rem;
+  margin-right: 2rem;
 `;
 const Logo = () => {
   const navigate = useNavigate();
@@ -67,7 +67,7 @@ const SearchBar = () => {
 const NavLinks = () => {
   return (
     <LinksWrapper className="navbar-nav mr-auto">
-      <li className="nav-item active">
+      <li className="nav-item ">
         <Link className="nav-link" to="/">
           Home <span className="sr-only">(current)</span>
         </Link>
