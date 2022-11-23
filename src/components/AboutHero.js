@@ -7,7 +7,13 @@ const AboutHero = () => {
       <section>
         <div className="text-center w-100 mx-auto container">
           <div className="w-75 mx-auto mt-3 mb-3 ">
-            <img src={Heroimage} alt={AboutHero.jpg} className="mx-auto" />
+            <img
+              src={Heroimage}
+              alt={AboutHero.jpg}
+              className="col-mdmx-auto "
+              height="350px"
+              style={{ objectFit: "cover" }}
+            />{" "}
           </div>
           <div className="text-center section__title section__title--services">
             <h1>Who We Are</h1>
