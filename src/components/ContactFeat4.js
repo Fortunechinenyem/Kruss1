@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const ContactFeat4 = () => {
   return (
     <section>
-      <h2 className="w-50 text-center mx-auto section__title section__title--services">
+      <h2 className="w-75 text-center mx-auto section__title section__title--services">
         Share Your Thoughts with Us
       </h2>
       <Form className="w-75 mx-auto text-center">
