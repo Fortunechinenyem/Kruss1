@@ -10,8 +10,8 @@ const AboutHero = () => {
             <img
               src={Heroimage}
               alt={AboutHero.jpg}
-              className="col-mdmx-auto "
-              height="350px"
+              className="col-md mx-auto "
+              height=""
               style={{ objectFit: "cover" }}
             />{" "}
           </div>
