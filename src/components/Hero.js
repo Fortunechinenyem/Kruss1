@@ -8,9 +8,12 @@ const Hero = () => {
       <div className="">
         <div className="herotext">
           <h1>Kruss Automotive Services </h1>
-          <Button variant="light" className="nav-item">
-            <Link to="/sevices"> Explore</Link>
-          </Button>
+
+          <Link to="/sevices">
+            <Button variant="light" className="nav-item">
+              Explore
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

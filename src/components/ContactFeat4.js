@@ -10,7 +10,7 @@ const ContactFeat4 = () => {
       <h2 className="w-50 text-center mx-auto section__title section__title--services">
         Share Your Thoughts with Us
       </h2>
-      <Form className="w-75 mx-auto">
+      <Form className="w-75 mx-auto text-center">
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Full Name</Form.Label>
           <Form.Control type="fullname" placeholder="Full Name" />
@@ -32,9 +32,11 @@ const ContactFeat4 = () => {
           <Form.Control type="text" placeholder="Message" />
         </Form.Group>
 
-        <Button variant="dark" type="submit" className="">
-          <Link to="/dashboard">Submit</Link>
-        </Button>
+        <Link to="/sevices">
+          <Button variant="dark" className="nav-item text-center">
+            Submit
+          </Button>
+        </Link>
       </Form>
     </section>
   );
