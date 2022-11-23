@@ -320,7 +320,28 @@ header {
 
   /* Background styles */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./image/img (18).jpg");
+    url("./image/pic (3).jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* Blog */
+.bloghero {
+  width: 100vw;
+  height: 100vh;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  color: white; /* ADD THIS LINE */
+
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("./image/img (9).jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -407,8 +428,11 @@ li:hover {
 }
 /* Contact Us */
 .contacthero {
-  max-width: 280px;
 }
+.contactfeat1 {
+  justify-content: space-between;
+}
+
 /* footer */
 .footer {
   background: var(--clr-dark);

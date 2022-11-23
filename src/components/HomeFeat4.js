@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPeopleCarry, FaRegEnvelope } from "react-icons/fa";
 import logo from "../image/img (4).jpg";
 
 const HomeFeat4 = () => {
@@ -14,6 +15,12 @@ const HomeFeat4 = () => {
         />
         <div className="col-md text-center">
           <h2>​We Leverage</h2>
+          <div>
+            <div>
+              <FaPeopleCarry />
+              We work together to achieve awesome goals!
+            </div>
+          </div>
           <button className="btn btn-info">About Us</button>
         </div>
       </div>

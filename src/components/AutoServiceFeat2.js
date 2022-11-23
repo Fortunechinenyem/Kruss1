@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../image/img (13).jpg";
+import logo from "../image/img (17).jpg";
 
 const AutoServiceFeat2 = () => {
   return (

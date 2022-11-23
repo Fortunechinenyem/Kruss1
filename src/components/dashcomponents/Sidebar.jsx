@@ -47,22 +47,7 @@ export default function Sidebar() {
     <>
       <Section>
         <div className="top">
-          <div className="brand">
-            <FaCar />
-            <span>KRUSS</span>
-          </div>
-          <div className="toggle">
-            {navbarState ? (
-              <VscChromeClose onClick={() => setNavbarState(false)} />
-            ) : (
-              <GiHamburgerMenu
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setNavbarState(true);
-                }}
-              />
-            )}
-          </div>
+          <div className="toggle"></div>
           <div className="links">
             <ul>
               <li

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Analytics from "./Analytics";
-import NavDash from "./NavDash";
 
 import OngoingWork from "./OngoingWork";
 
@@ -10,7 +9,6 @@ import Profile from "./Profile";
 export default function Dash() {
   return (
     <Section>
-      <NavDash />
       <div className="grid">
         <div className="row__one">
           <Profile />

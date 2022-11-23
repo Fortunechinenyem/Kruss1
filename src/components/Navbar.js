@@ -82,6 +82,11 @@ const NavLinks = () => {
           Auto-Services
         </Link>
       </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/blog" style={{ color: "#268f7d" }}>
+          Blog
+        </Link>
+      </li>
 
       <li className="nav-item">
         <Link className="nav-link" to="/contact" style={{ color: "#268f7d" }}>
