@@ -32,7 +32,7 @@ const ContactFeat4 = () => {
           <Form.Control type="text" placeholder="Message" />
         </Form.Group>
 
-        <Button variant="info" type="submit" className="">
+        <Button variant="dark" type="submit" className="">
           <Link to="/dashboard">Submit</Link>
         </Button>
       </Form>

@@ -21,7 +21,7 @@ const BlogHero = () => {
               <Form.Control type="email" placeholder="Enter email" />
             </Form.Group>
 
-            <Button variant="info" type="submit" className="">
+            <Button variant="light" type="submit" className="">
               <Link to="/dashboard">Subscibe</Link>
             </Button>
           </Form>

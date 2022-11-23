@@ -5,7 +5,7 @@ const BlogFeat1 = () => {
     <section>
       <div className="dropdown text-center">
         <button
-          className="btn btn-info dropdown-toggle "
+          className="btn btn-dark dropdown-toggle "
           type="button"
           id="dropdownMenu2"
           data-bs-toggle="dropdown"

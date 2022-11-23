@@ -21,7 +21,7 @@ const HomeFeat4 = () => {
               We work together to achieve awesome goals!
             </div>
           </div>
-          <button className="btn btn-info">About Us</button>
+          <button className="btn btn-dark">About Us</button>
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ const HomeFeat2 = () => {
       <div className="d-flex row g-5 mx-auto ">
         <div className="col-md text-center">
           <h2>​BeSpoke Auto Services</h2>
-          <button className="btn btn-info">Explore</button>
+          <button className="btn btn-dark">Explore</button>
         </div>
         <img
           src={logo}

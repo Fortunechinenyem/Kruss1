@@ -7,7 +7,7 @@ const AutoServiceFeat4 = () => {
       <div className="d-flex row g-5 mx-auto ">
         <div className="col-md text-center">
           <h2>​Fleet Management</h2>
-          <button className="btn btn-info">Learn More</button>
+          <button className="btn btn-dark">Learn More</button>
         </div>
         <img
           src={logo}

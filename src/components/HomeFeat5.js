@@ -14,7 +14,7 @@ const HomeFeat5 = () => {
         />
         <div className="col-md text-center">
           <h2>​Check Out Our Blog</h2>
-          <button className="btn btn-info">Here</button>
+          <button className="btn btn-dark">Here</button>
         </div>
       </div>
     </section>
