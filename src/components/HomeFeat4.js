@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPeopleCarry } from "react-icons/fa";
+import { BsArrowRight } from "react-icons/bs";
 import logo from "../image/img (4).jpg";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
@@ -25,7 +26,7 @@ const HomeFeat4 = () => {
           </div>
           <Link to="/sevices">
             <Button variant="dark" className="nav-item">
-              About Us
+              About Us <BsArrowRight />
             </Button>
           </Link>
         </div>

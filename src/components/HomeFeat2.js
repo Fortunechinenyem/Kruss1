@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../image/img (1).jpg";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import { BsArrowRight } from "react-icons/bs";
 const HomeFeat2 = () => {
   return (
     <section className="container ">
@@ -11,6 +12,7 @@ const HomeFeat2 = () => {
           <Link to="/sevices">
             <Button variant="dark" className="nav-item">
               Explore
+              <BsArrowRight />
             </Button>
           </Link>
         </div>

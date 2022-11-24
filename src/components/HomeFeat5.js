@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../image/img (5).jpg";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import { BsArrowRight } from "react-icons/bs";
 
 const HomeFeat5 = () => {
   return (
@@ -14,7 +17,11 @@ const HomeFeat5 = () => {
         />
         <div className="col-md text-center">
           <h2>​Check Out Our Blog</h2>
-          <button className="btn btn-dark">Here</button>
+          <Link to="/sevices">
+            <Button variant="dark" className="nav-item">
+              Here <BsArrowRight />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

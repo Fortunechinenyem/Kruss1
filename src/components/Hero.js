@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import { BsArrowRight } from "react-icons/bs";
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
 
           <Link to="/sevices">
             <Button variant="light" className="nav-item">
-              Explore
+              Explore <BsArrowRight />
             </Button>
           </Link>
         </div>
