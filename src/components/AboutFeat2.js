@@ -1,6 +1,6 @@
 import React from "react";
 import { BsHddNetwork } from "react-icons/bs";
-import { FaNetworkWired, FaPeopleCarry } from "react-icons/fa";
+import { FaPeopleCarry } from "react-icons/fa";
 import logo from "../image/img (13).jpg";
 
 const AboutFeat2 = () => {
