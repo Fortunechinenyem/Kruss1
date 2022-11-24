@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../image/pic (7).jpg";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import { BsArrowRight } from "react-icons/bs";
 
 const AutoServiceFeat5 = () => {
   return (
@@ -7,7 +10,11 @@ const AutoServiceFeat5 = () => {
       <div className="d-flex row g-5 mx-auto ">
         <div className="col-md text-center">
           <h2>​Pre-Purchase Inspection</h2>
-          <button className="btn btn-dark">Learn More</button>
+          <Link to="/sevices">
+            <Button variant="dark" className="nav-item">
+              Learn More <BsArrowRight />
+            </Button>
+          </Link>
         </div>
         <img
           src={logo}
